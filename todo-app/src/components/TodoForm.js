@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-function TodoForm({ addTodo }) {
+function TodoForm({ submitTask }) {
   const [text, setText] = useState('');
   const [category, setCategory] = useState('upnext');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text.trim()) {
-      addTodo(text, category);
+      submitTask(text, category);
       setText('');
     }
   };
@@ -26,7 +26,7 @@ function TodoForm({ addTodo }) {
           <option value="inprogress">In Progress</option>
           <option value="complete">Complete</option>
         </select>
-        <button type="submit">Add Task</button>
+        <button type="submit">Submit Task</button>
       </form>
     </div>
   );
