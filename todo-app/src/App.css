@@ -25,6 +25,21 @@
   color: #333;
 }
 
+.upnext {
+  background-color: #3498db;
+  color: white;
+}
+
+.inprogress {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.complete {
+  background-color: #e67e22;
+  color: white;
+}
+
 .todo-form {
   margin-bottom: 20px;
 }
@@ -83,19 +98,4 @@
 
 .todo-item button:hover {
   background-color: #c0392b;
-}
-
-.category-upnext {
-  background-color: #3498db;
-  color: white;
-}
-
-.category-inprogress {
-  background-color: #2ecc71;
-  color: white;
-}
-
-.category-complete {
-  background-color: #e67e22;
-  color: white;
 }
