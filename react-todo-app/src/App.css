@@ -1,0 +1,94 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #343a40;
+}
+
+.TodoApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TodoBox {
+  margin-bottom: 20px;
+}
+
+.TodoPages {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.TodoPage {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.TodoPage-title {
+  font-size: 18px;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.TodoItem {
+  background-color: #ffffff;
+  color: #343a40;
+  padding: 16px;
+  margin: 8px 0;
+  border-radius: 8px;  /* Increasing border-radius for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoItem-details {
+  flex: 1;  /* Allowing the details to take up available space */
+  margin-right: 16px;  /* Addingspacing between the details and buttons */
+}
+
+.TodoItem-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.TodoItem-description {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.TodoItem-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
